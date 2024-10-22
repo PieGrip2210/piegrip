@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>a portfolio or whatever</title>
+    <style>
+        *{
+                box-sizing: border-box;
+            }
+        body {
+            background-color: palegoldenrod;
+            font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            flex-direction: column;
+            overflow-x: hidden;
+            margin: 0;
+        }
+        header{
+            height: 250px;
+            width: 100vw;
+            background-color: gray;
+            color: white;
+        }
+        section h2{
+            height: fit-content;
+            width: 750px;
+            background-color: rgb(180, 79, 79);
+            margin: 5px;
+            border-radius: 5px;
+            text-align: center;
+            color: white
+        }
+        .projects{
+            color: black;
+            background-color: black;
+            background-position: center;
+            background-repeat: no-repeat;
+            width: 500px;
+            height: 200px;
+            margin: 10px;
+            border-radius: 5px;
+            box-shadow: 2px 4px 5px rgba(0, 0, 0, 0.3);
+            transform: translateX(400%);
+            transition: transform 0.4s ease;
+        }
+        .projects :nth-of-type(even){
+            transform: translateX(-400%);
+        }
+        .projects.show{
+            transform: translateX(0);
+        }
+        .achievement{
+            color: white;
+            background-color: black;
+            background-position: center;
+            background-repeat: no-repeat;
+            background-size: auto;
+            width: 400px;
+            height: 125px;
+            margin: 10px;
+            border-radius: 5px;
+            box-shadow: 2px 4px 5px rgba(0, 0, 0, 0.3);
+            transform: translateX(400%);
+            transition: transform 0.4s ease;
+        }
+        .achievement :nth-of-type(even){
+            transform: translateX(-400%);
+        }
+        .achievement.show{
+            transform: translateX(0);
+        }
+        footer{
+            background-color: rgb(180, 79, 79);
+            height: 100px;
+            width: 100vw;
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+
+        <header>
+            <h1>My Portfolio</h1>
+            <h3>"I want to work and learn."</h3>
+            <nav>
+                <ul>
+                    <li><a href="#about">About Me</a></li>
+                    <li><a href="#greateststuff">Projects</a></li>
+                    <li><a href="#contacts">Contact</a></li>
+                </ul>
+            </nav>
+        </header>
+    
+        <section id="aboutme">
+            <h2>About Me</h2>
+            <p>Name: Gede Artha Wira Pratama</p>
+            <p>Motto: Learn from mistakes. Even when it's your own. </p>
+            <p>Home Address: Jalan Kamboja, Blok T No. 11</p>
+            <p>Hobby: Gaming, drawing </p>
+        </section>
+
+        <section id="greateststuff">
+            <h2>My achievements</h2>
+            <div class="achievement">
+            <h3>Poem Reader (3rd place)</h3>
+            <p>Back in my Elementary School days, I used to receive 3rd place in poem reading.</p>
+            </div>
+        </div>
+        </section>
+    
+        <section id="projectstuff">
+            <h2>What are my projects?</h2>
+            <div class="projects" style="background-image: url('forms.png');">
+                <h3>Student Registration</h3>
+                <p> Basically, a project on some student registration. 
+                    I kinda like it, it's useful for stuff.</p>
+            </div>
+            <div class="projects" style="background-image: url('gallery.png');">
+                <h3>Gallery/Slideshow Project</h3>
+                <p> This is a gallery/slideshow project that can also play sound.
+                    It's themed around bikes. That's it.
+                </p>
+            </div>
+        </section>
+    
+        <section id="contacts">
+            <h2>Contact Me</h2>
+            <p>Email: <a href="gmail.com">gedearthawirap@gmail.com</a></p>
+            <p>Call me on : 62-821-4575-4264</p>
+        </section>
+    
+        <footer>
+            <p>Thanks for reading my portfolio!</p>
+        </footer>
+    
+    
+    <script src="notsataandagi.js"></script>
+</body>
+</html>
